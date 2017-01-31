@@ -1,12 +1,11 @@
 'use strict';
 
-const module = require('./_gallery-item.scss');
 
 module.exports = {
   tamplate: require('./gallery-item.html'),
   controller: ['$log', 'galleryService', GalleryItemController],
   controllerAs: 'GalleryItemCtrl',
-  bindings: {
+  bindings:{
     gallery: '<'
   }
 };
