@@ -1,0 +1,10 @@
+@import "../scss/lib/theme/vars";
+
+.signup{
+}
+
+.btn-std{
+ width: $box-std;
+ margin-right: $gutter-std * 2.8;
+ background-color: $brand-primary;
+}
