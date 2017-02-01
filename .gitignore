@@ -1,5 +1,4 @@
 Created by https://www.gitignore.io/api/macos,node,vim,windows,linux
-.env
 out.bmp
 ### macOS ###
 *.DS_Store
@@ -27,6 +26,7 @@ Temporary Items
 
 ### Node ###
 node_modules
+.env
 # Logs
 logs
 *.log

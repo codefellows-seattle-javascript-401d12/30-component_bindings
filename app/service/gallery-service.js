@@ -24,7 +24,6 @@ function galleryService($q, $log, $http, authService){
     .then( token => {
       let url = baseUrl;
       config.headers.Authorization = `Bearer ${token}`;
-
       return $http.post(url, gallery, config);
     })
     .then( res => {
@@ -88,7 +87,7 @@ function galleryService($q, $log, $http, authService){
     });
   };
 
-  service.deleteGalleries = function(galleryID){
+  service.deleteGallery = function(galleryID){
     return authService.getToken()
     .then( token => {
       let url = `baseUrl/${galleryID}`;

@@ -36,5 +36,4 @@ context.keys().forEach( key => {
   let name = camelcase(path.basename(key, '.js'));
   let module = context(key);
   cfgram.component(name, module);
-  console.log('name=====', name, 'module======', module);
 });

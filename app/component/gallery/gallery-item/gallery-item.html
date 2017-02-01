@@ -11,7 +11,9 @@
      </div>
    </div>
 
-   <edit-gallery ng-if="GalleryItemCtrl.showEditGallery = !GalleryItemCtrl.gallery"></edit-gallery>
-   <span ng-click="GalleryItemCtrl.showEditGallery = !GalleryItemCtrl.showEditGallery">edit</span>
-   <span ng-click="GalleryItemCtrl.deleteGallery()">delete</span>
+   <edit-gallery ng-if="GalleryItemCtrl.showEditGallery = !GalleryItemCtrl.gallery" gallery="gallery"></edit-gallery>
+   <div class="container">
+     <span class="update-btn" ng-click="GalleryItemCtrl.showEditGallery = !GalleryItemCtrl.showEditGallery"> edit </span>
+     <span class="update-btn" ng-click="GalleryItemCtrl.deleteGallery()">delete</span>
+   </div>
 </section>
