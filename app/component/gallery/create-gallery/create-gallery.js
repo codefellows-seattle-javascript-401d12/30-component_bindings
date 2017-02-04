@@ -18,5 +18,7 @@ function createGalleryController($log, galleryService) {
       this.gallery.name = null;
       this.gallery.desc = null;
     });
+
+    location.reload();
   };
 }

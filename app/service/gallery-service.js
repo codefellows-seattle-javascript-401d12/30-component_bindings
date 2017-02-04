@@ -90,16 +90,14 @@ function galleryService($q, $log, $http, authService){
   service.deleteGallery = function(galleryID){
     return authService.getToken()
     .then( token => {
-      let url = `baseUrl/${galleryID}`;
+      let url = `${baseUrl}/${galleryID}`;
 
       config.headers.Authorization = `Bearer ${token}`;
 
-      return $http.get(url, config);
+      return $http.delete(url, config);
     })
     .then( res => {
-      $log.log('galleries retrived');
-      service.galleries = res.data;
-      return service.galleries;
+      return res.body;
     })
     .catch( err => {
       $log.error(err.message);

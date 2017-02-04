@@ -5,19 +5,7 @@
    font-size: $padding-std * 3;
    margin-left: $gutter-std * 2;
    margin-bottom: 15vh;
-   .current-item{
-      clear: both;
-      background-color: $brand-primary * 1.5;
-      color: $color-l;
-      width: $box-std * 2;
-      font-size: $padding-std * 2;
-      border-radius: $padding-std;
-      margin-top: $gutter-std / 2;
-      margin-bottom: $gutter-std / 5;
-    div{
-      padding: $padding-std;
-    }
-   }
+
    .container{
      width: 50%;
      margin-left: 30%;
@@ -37,4 +25,17 @@
        vertical-align: middle;
     }
    }
+ }
+ .current-item{
+    clear: both;
+    background-color: $brand-primary * 1.5;
+    color: $color-l;
+    width: $box-std * 2;
+    font-size: $padding-std * 2;
+    border-radius: $padding-std;
+    margin-top: $gutter-std / 2;
+    margin-bottom: $gutter-std / 5;
+  div{
+    padding: $padding-std;
+  }
  }

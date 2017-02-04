@@ -1,8 +1,6 @@
 'use strict';
 
 
-require('./_edit-gallery.scss');
-
 module.exports = {
   template: require('./edit-gallery.html'),
   controller: ['$log', 'galleryService', EditGalleryController],
@@ -16,7 +14,6 @@ function EditGalleryController($log, galleryService){
   $log.debug('EditGalleryController');
 
   this.updateGallery = function(){
-    console.log('*****************************');
     galleryService.updateGallery(this.gallery._id, this.gallery);
   };
 }
